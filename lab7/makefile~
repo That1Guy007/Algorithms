@@ -1,0 +1,13 @@
+all: Lab7
+
+Lab7: Tnode.o RBT.o RBTEngine.o
+	g++ -std=c++11 Tnode.o RBT.o RBTEngine.o -o Lab7
+
+Tnode.o: Tnode.cpp
+	g++ -std=c++11 -c Tnode.cpp
+
+BST.o:RBT.cpp
+	g++ -std=c++11 -c RBT.cpp
+
+BSTEngine.o: RBTEngine.cpp
+	g++ -std=c++11 -c RBTEngine.cpp

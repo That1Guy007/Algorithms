@@ -1,0 +1,16 @@
+//main.cpp
+//Main function
+
+
+#include <iostream>
+#include <string>
+#include <iomanip>
+#include <cstring>
+#include "MST.h"
+
+main(){
+	MST objM;
+	objM.Input();
+	objM.print();
+	objM.Prims();
+}

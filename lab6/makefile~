@@ -1,0 +1,19 @@
+all: Lab6
+
+Lab6: Insert.o Delete.o Search.o Hash.o Main.o
+	g++ -std=c++11 Insert.o Delete.o Search.o Hash.o Main.o -o Lab6
+
+Insert.o: Insert.cpp
+	g++ -std=c++11 -c Insert.cpp
+
+Delete.o: Delete.cpp
+	g++ -std=c++11 -c Delete.cpp
+
+Search.o: Search.cpp
+	g++ -std=c++11 -c Search.cpp
+
+Hash.o: Hash.cpp
+	g++ -std=c++11 -c Hash.cpp
+
+Main.o: Main.cpp
+	g++ -std=c++11 -c Main.cpp

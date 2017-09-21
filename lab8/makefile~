@@ -1,0 +1,13 @@
+all: Lab8
+
+Lab8: MST.o Node.o main.o
+	g++ -std=c++11 MST.o Node.o main.o -o Lab8
+
+MST.o: MST.cpp
+	g++ -std=c++11 -c MST.cpp
+
+Node.o: Node.cpp
+	g++ -std=c++11 -c Node.cpp
+
+main.o: main.cpp
+	g++ -std=c++11 -c main.cpp

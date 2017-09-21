@@ -1,0 +1,13 @@
+//Hnode.h
+//Structure for Hnode.cpp
+#ifndef HNODE_H
+#define HNODE_H
+class Hnode{
+private:	
+	Hnode* next;
+	int value;
+	Hnode* Htable[20];//creates an array of pointers
+public:
+	friend class Hash;
+};
+#endif

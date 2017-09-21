@@ -1,0 +1,14 @@
+//Tnode.h
+//creates the template of the nodes
+
+class Tnode {
+private:
+	Tnode* parent;  //parent data
+	Tnode* left;  //left data
+	Tnode* right; ///right pointer
+	int data;  //data of the pointer
+public:
+	friend class BST;
+	Tnode();
+	void printNode(int);
+};

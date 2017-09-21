@@ -1,0 +1,22 @@
+//MST.h
+
+#ifndef MST_H
+#define MST_H
+
+#include <string>
+#include "Node.h"
+
+class MST{
+private:
+	std::string** nodes;
+	
+	int size;
+public:
+	MST();
+	~MST();
+	void Input();
+	void print();
+	void Prims();
+};
+
+#endif
